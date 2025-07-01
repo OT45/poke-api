@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>PokeAPI con JS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Busca tu Pokémon</h1>
-  <div class="search-container">
-    <input type="text" id="pokemonInput" placeholder="Ej: pikachu o 25">
-    <button id="buscarBtn">Buscar</button>
+  <div class="main-container">
+    <div class="search-container">
+      <input type="text" id="pokemonInput" placeholder="Ej: pikachu o 25" />
+      <button id="buscarBtn">Buscar</button>
 
-  </div>
-  <div id="pokemonContainer">  
-  </div>
-
-  <div class="nav-buttons">
-  <button onclick="cambiarPokemon(-1)">Anterior</button>
-  <button onclick="cambiarPokemon(1)">Siguiente</button>
+      <div class="nav-buttons">
+        <button onclick="cambiarPokemon(-1)">Anterior</button>
+        <button onclick="cambiarPokemon(1)">Siguiente</button>
+      </div>
     </div>
+
+    <div id="pokemonContainer"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

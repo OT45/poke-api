@@ -5,21 +5,49 @@ body {
   padding: 20px;
 }
 
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
 .search-container {
+  width: 250px;
+  text-align: left;
   margin-bottom: 20px;
 }
 
 #pokemonContainer {
+  width: 320px;
+  min-height: 320px;
   background-color: white;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pokemon-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-info img {
+  width: 120px;
+  height: 120px;
+}
+
+.pokemon-info .details {
+  text-align: left;
 }
 
 #pokemonContainer img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 button {
@@ -36,4 +64,15 @@ button {
 
 button:hover {
   background-color: #f4b400;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-buttons button {
+  flex: 1;
+  margin: 0 5px;
 }
