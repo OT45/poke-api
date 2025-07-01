@@ -66,4 +66,17 @@ function traducirStat(statName) {
   return traducciones[statName] || statName;
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const buscarBtn = document.getElementById('buscarBtn');
+  const pokemonInput = document.getElementById('pokemonInput');
+
+  buscarBtn.addEventListener('click', buscarPokemon);
+
+  pokemonInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      buscarPokemon();
+    }
+  });
+});
+
 //prueba git
